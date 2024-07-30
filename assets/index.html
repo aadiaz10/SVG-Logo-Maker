@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SVG Logo Maker</title>
+</head>
+<body>
+    <div>
+        <h1>Create Your SVG Logo</h1>
+        <form id="logoForm">
+            <label for="text">Text for the logo:</label>
+            <input type="text" id="text" name="text" required>
+
+            <label for="color">Color for the logo:</label>
+            <input type="color" id="color" name="color" required>
+
+            <label for="shape">Shape for the logo:</label>
+            <select id="shape" name="shape" required>
+                <option value="circle">Circle</option>
+                <option value="square">Square</option>
+                <option value="triangle">Triangle</option>
+            </select>
+
+            <button type="submit">Generate SVG</button>
+        </form>
+        <div id="svgOutput"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
